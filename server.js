@@ -1,3 +1,4 @@
+var db = require('./db');
 let User = require("./user");
 
 function run() {
@@ -6,6 +7,8 @@ function run() {
 
     firstUser.hello(secondUser);
     secondUser.hello(firstUser);
+
+    console.log(db.getPhrase("Run successful"));
 }
 
 if (module.parent) {
