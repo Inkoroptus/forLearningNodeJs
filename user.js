@@ -1,3 +1,4 @@
+var phrases = require('./ru');
 // for exports
 
 function User(name) {
@@ -5,9 +6,9 @@ function User(name) {
 }
 
 User.prototype.hello = function(who) {
-        console.log("Hello, " + who.name);
+        console.log(phrases.Hello + ", " + who.name);
     }
-    // end
+    // ...
 
 console.log("user.js is required");
-global.User = User;
+exports.User = User;

@@ -1,7 +1,7 @@
-require("./user");
+let user = require("./user");
 
-let firstUser = new User("Vasya");
-let secondUser = new User("Danila");
+let firstUser = new user.User("Vasya");
+let secondUser = new user.User("Danila");
 
 firstUser.hello(secondUser);
 secondUser.hello(firstUser);
