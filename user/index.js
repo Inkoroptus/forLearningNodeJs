@@ -1,5 +1,4 @@
-var db = require('../db');
-db.connect();
+var db = require('db');
 // for exports
 
 function User(name) {

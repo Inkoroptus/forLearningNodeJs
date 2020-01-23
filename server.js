@@ -1,4 +1,6 @@
-var db = require('./db');
+var db = require('db');
+db.connect();
+
 let User = require("./user");
 
 function run() {
