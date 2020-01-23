@@ -1,8 +1,8 @@
-let user = require("./user");
+let User = require("./user");
 
 function run() {
-    let firstUser = new user.User("Vasya");
-    let secondUser = new user.User("Danila");
+    let firstUser = new User("Vasya");
+    let secondUser = new User("Danila");
 
     firstUser.hello(secondUser);
     secondUser.hello(firstUser);

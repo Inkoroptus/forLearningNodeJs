@@ -1,4 +1,5 @@
-var phrases = require('./ru');
+var db = require('../db');
+db.connect();
 // for exports
 
 function User(name) {
@@ -6,7 +7,10 @@ function User(name) {
 }
 
 User.prototype.hello = function(who) {
-        console.log(phrases.Hello + ", " + who.name);
-    }
-    // ...
-exports.User = User;
+    console.log(db.getPhrase("Hello") + ", " + who.name);
+};
+// ...
+
+//module.exports = exports = this
+// better use exports
+module.exports = User;
