@@ -9,7 +9,7 @@ function run() {
 }
 
 if (module.parent) {
-    exports.run = run;
+    exports.run = run();
 } else {
     run();
 }
