@@ -33,7 +33,7 @@ function makePage(url) {
     if (url != 'index.html') {
         throw new HttpError(404, "Page: " + url + " - does not found");
     }
-    return util.format("%s, %s!", getPhrases("Hello"), getPhrases("World"));
+    return util.format("%s, %s!", getPhrases("**"), getPhrases("5984"));
 }
 
 try {
